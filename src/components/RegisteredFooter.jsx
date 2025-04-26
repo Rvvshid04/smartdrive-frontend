@@ -42,7 +42,7 @@ const RegisteredFooter = () => {
 
                     {/* Logo */}
                     <Link 
-                        to="/" 
+                        to="/smartdrive-frontend/" 
                         className="group transform transition-all duration-300 hover:scale-105"
                     >
                         <h1 className="text-3xl font-bold text-white group-hover:text-green-400 transition-colors duration-300">

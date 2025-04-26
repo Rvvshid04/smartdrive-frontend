@@ -62,7 +62,7 @@ const Breadcrumbs = ({ dynamicNames = {} }) => {
                     <ol className="flex items-center space-x-2 text-sm">
                         <li>
                             <Link 
-                                to="/student" 
+                                to="/smartdrive-frontend/student" 
                                 className="text-green-600 hover:text-green-700 flex items-center"
                             >
                                 <FaHome className="mr-1" />

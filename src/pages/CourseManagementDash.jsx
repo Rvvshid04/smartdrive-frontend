@@ -37,7 +37,7 @@ const CourseManagementDash = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="flex items-center justify-between mb-8">
                     <h1 className="text-3xl font-bold text-gray-900">Course Management Dashboard</h1>
-                    <Link to="/admin" className="text-green-600 hover:text-green-700">
+                    <Link to="/smartdrive-frontend/admin" className="text-green-600 hover:text-green-700">
                         Back to Admin Dashboard
                     </Link>
                 </div>
@@ -48,7 +48,7 @@ const CourseManagementDash = () => {
                         <div className="bg-white rounded-lg shadow-md p-6">
                             <h2 className="text-xl font-bold text-gray-900 mb-4">Quick Actions</h2>
                             <div className="space-y-4">
-                                <Link to="/admin/course-management/create" className="block">
+                                <Link to="/smartdrive-frontend/admin/course-management/create" className="block">
                                     <button className="w-full px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors duration-300">
                                         Create New Course
                                     </button>

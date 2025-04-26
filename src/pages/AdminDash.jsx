@@ -46,7 +46,7 @@ const AdminDash = () => {
                             <button className="w-full px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors duration-300">
                                 Manage Instructors
                             </button>
-                            <Link to="/admin/course-management" className="block">
+                            <Link to="/smartdrive-frontend/admin/course-management" className="block">
                                 <button className="w-full px-4 py-2 bg-green-600 text-white rounded-full hover:bg-green-700 transition-colors duration-300">
                                     Manage Courses
                                 </button>

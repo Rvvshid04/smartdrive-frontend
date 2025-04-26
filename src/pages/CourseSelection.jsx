@@ -105,7 +105,7 @@ const CourseSelection = () => {
                     <span>${totalPrice}</span>
                 </div>
                 <Link
-                    to="/checkout" // Replace with the actual checkout route
+                    to="/smartdrive-frontend/checkout" 
                     className={`mt-4 inline-block w-full px-6 py-3 bg-green-600 text-white rounded-full text-center transition-all duration-300 ${isCheckoutDisabled ? 'bg-gray-400 cursor-not-allowed' : 'hover:bg-green-700'}`}
                     disabled={isCheckoutDisabled}
                 >

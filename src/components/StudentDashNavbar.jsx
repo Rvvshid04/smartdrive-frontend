@@ -25,7 +25,7 @@ const StudentDashboardNavbar = () => {
         try {
             await supabase.auth.signOut();
             // Redirect to landing page or handle logout in your app
-            window.location.href = '/';
+            window.location.href = '/smartdrive-frontend/';
         } catch (error) {
             console.error('Error logging out:', error.message);
         }
@@ -74,7 +74,7 @@ const StudentDashboardNavbar = () => {
             <div className="px-6 py-3">
                 <div className="max-w-7xl mx-auto flex justify-between items-center">
                     {/* Logo Section */}
-                    <Link to="/" className={`text-2xl font-bold ${theme === 'dark' ? 'text-green-400 hover:text-green-300' : 'text-green-600 hover:text-green-700'} transition-colors duration-300`}>
+                    <Link to="/smartdrive-frontend/" className={`text-2xl font-bold ${theme === 'dark' ? 'text-green-400 hover:text-green-300' : 'text-green-600 hover:text-green-700'} transition-colors duration-300`}>
                         SmartDrive
                     </Link>
 
@@ -104,14 +104,14 @@ const StudentDashboardNavbar = () => {
                             {showProfileDropdown && (
                                 <div className={`absolute right-0 mt-2 w-48 ${theme === 'dark' ? 'bg-gray-700' : 'bg-white'} rounded-md shadow-lg py-1 z-50 ring-1 ring-black ring-opacity-5`}>
                                     <Link
-                                        to="/student/profile"
+                                        to="/smartdrive-frontend/student/profile"
                                         className={`flex items-center px-4 py-2 text-sm ${theme === 'dark' ? 'text-gray-200 hover:bg-gray-600' : 'text-gray-700 hover:bg-green-50'} transition-colors duration-300`}
                                     >
                                         <FaUser className="mr-2" />
                                         Profile
                                     </Link>
                                     <Link
-                                        to="/student/notifications"
+                                        to="/smartdrive-frontend/student/notifications"
                                         className={`flex items-center px-4 py-2 text-sm ${theme === 'dark' ? 'text-gray-200 hover:bg-gray-600' : 'text-gray-700 hover:bg-green-50'} transition-colors duration-300`}
                                     >
                                         <FaBell className="mr-2" />
@@ -208,7 +208,7 @@ const StudentDashboardNavbar = () => {
                 >
                     <div className="px-2 pt-2 pb-3 space-y-1">
                         <Link 
-                            to="/student" 
+                            to="/smartdrive-frontend/student" 
                             className="flex items-center px-3 py-2 text-white hover:bg-green-600 rounded-md transition-all duration-300 ease-in-out"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
@@ -217,7 +217,7 @@ const StudentDashboardNavbar = () => {
                         </Link>
 
                         <Link 
-                            to="/student/library" 
+                            to="/smartdrive-frontend/student/library" 
                             className="flex items-center px-3 py-2 text-white hover:bg-green-600 rounded-md transition-all duration-300 ease-in-out"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
@@ -238,7 +238,7 @@ const StudentDashboardNavbar = () => {
                                     {courses.map(course => (
                                         <Link
                                             key={course.id}
-                                            to={`/student/course/${course.id}`}
+                                            to={`/smartdrive-frontend/student/course/${course.id}`}
                                             className="flex items-center px-3 py-2 text-white hover:bg-green-600 rounded-md transition-all duration-300 ease-in-out"
                                             onClick={() => {
                                                 setIsMobileMenuOpen(false);
@@ -253,7 +253,7 @@ const StudentDashboardNavbar = () => {
                         </div>
 
                         <Link 
-                            to="/student/support" 
+                            to="/smartdrive-frontend/student/support" 
                             className="flex items-center px-3 py-2 text-white hover:bg-green-600 rounded-md transition-all duration-300 ease-in-out"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
@@ -262,7 +262,7 @@ const StudentDashboardNavbar = () => {
                         </Link>
 
                         <Link 
-                            to="/student/announcements" 
+                            to="/smartdrive-frontend/student/announcements" 
                             className="flex items-center px-3 py-2 text-white hover:bg-green-600 rounded-md transition-all duration-300 ease-in-out"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >

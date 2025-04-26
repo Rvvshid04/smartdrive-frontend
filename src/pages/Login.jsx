@@ -47,7 +47,16 @@ const Login = () => {
                 role: userData.role
             }));
 
-            navigate('/dashboard');
+            // Redirect based on role
+            if (userData.role === 'admin') {
+                navigate('/smartdrive-frontend/admin');
+            } else if (userData.role === 'student') {
+                navigate('/smartdrive-frontend/student');
+            } else if (userData.role === 'instructor') {
+                navigate('/smartdrive-frontend/instructor');
+            } else {
+                navigate('/smartdrive-frontend/'); // fallback
+            }
         } catch (error) {
             setError(error.message);
         } finally {
@@ -124,7 +133,7 @@ const Login = () => {
                     <div className="text-center">
                         <p className="text-sm text-gray-600">
                             Don't have an account?{' '}
-                            <Link to="/register" className="font-medium text-green-600 hover:text-green-500 transition-colors duration-300">
+                            <Link to="/smartdrive-frontend/register" className="font-medium text-green-600 hover:text-green-500 transition-colors duration-300">
                                 Register here
                             </Link>
                         </p>

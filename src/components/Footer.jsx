@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* Logo */}
           <Link 
-            to="/" 
+            to="/smartdrive-frontend/" 
             className="group transform transition-all duration-300 hover:scale-105"
           >
             <h1 className="text-3xl font-bold text-white group-hover:text-green-400 transition-colors duration-300">
@@ -63,16 +63,16 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4 text-green-400">SITE</h3>
           <ul className="flex flex-wrap gap-4 text-gray-400">
             <li>
-              <Link to="/" className="hover:text-green-400 transition-colors duration-300">Home</Link>
+              <Link to="/smartdrive-frontend/" className="hover:text-green-400 transition-colors duration-300">Home</Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-green-400 transition-colors duration-300">About Us</Link>
+              <Link to="/smartdrive-frontend/about" className="hover:text-green-400 transition-colors duration-300">About Us</Link>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-green-400 transition-colors duration-300">Contact Us</Link>
+              <Link to="/smartdrive-frontend/contact" className="hover:text-green-400 transition-colors duration-300">Contact Us</Link>
             </li>
             <li>
-              <Link to="/services" className="hover:text-green-400 transition-colors duration-300">Services</Link>
+              <Link to="/smartdrive-frontend/services" className="hover:text-green-400 transition-colors duration-300">Services</Link>
             </li>
           </ul>
         </div>

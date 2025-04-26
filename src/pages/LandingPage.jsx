@@ -147,7 +147,7 @@ const LandingPage = () => {
                 <div className="absolute right-8 top-1/2 transform -translate-y-1/2">
                     <div className="bg-white rounded-lg shadow-lg p-4">
                         <h4 className="font-bold text-lg">Registrations are now open!</h4>
-                        <Link to="/register">
+                        <Link to="/smartdrive-frontend/register">
                             <button className="mt-2 bg-green-600 text-white font-bold px-4 py-2 rounded transition duration-300 hover:bg-green-700">
                                 Register Now
                             </button>

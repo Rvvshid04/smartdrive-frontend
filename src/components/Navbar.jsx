@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
     const navigate=useNavigate();
@@ -22,13 +22,13 @@ const Navbar = () => {
                     <div className="absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20 opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300">
                         <div className="min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4">
                             <p
-                                onClick={() => navigate('my-profile')}
+                                onClick={() => navigate('smartdrive-frontend/my-profile')}
                                 className="hover:text-black cursor-pointer"
                             >
                                 My Profile
                             </p>
                             <p
-                                onClick={() => navigate('my-appointments')}
+                                onClick={() => navigate('smartdrive-frontend/my-appointments')}
                                 className="hover:text-black cursor-pointer"
                             >
                                 My Appointments
@@ -44,7 +44,7 @@ const Navbar = () => {
                 </div>
             ) : (
                 <button
-                    onClick={() => navigate('/login')}
+                    onClick={() => navigate('/smartdrive-frontend/login')}
                     className="border-2 border-green-600 text-green-600 font-bold px-8 py-3 rounded-full transition duration-300 hover:bg-green-600 hover:text-white"
                 >
                     Sign In
