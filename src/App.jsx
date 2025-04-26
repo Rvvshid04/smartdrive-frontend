@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
 import ProtectedRoute from './components/ProtectedRoute';
 import AdminDash from "./pages/AdminDash";
 import Home from "./pages/Home";
@@ -34,41 +34,38 @@ function App() {
   return (
     <>
       <div className="w-full">
-          <BrowserRouter basename="/smartdrive-frontend">
-          <Routes>
-              <Route path='/' element={<LandingPage/>} />
-              <Route path='/Home' element={<Home/>} />
-              <Route path='/instructors' element={<Instructors/>} />
-              <Route path='/login' element={<Login/>} />
-              <Route path='/contact' element={<Contact/>} />
-              <Route path='/my-profile' element={<MyProfile/>} />
-              <Route path='/my-appointments' element={<MyAppointments/>} />
-              <Route path='/appointment' element={<Appointments/>} />
-              <Route path='/admin' element={
-                <ProtectedRoute allowedRoles={['admin']}>
-                  <AdminDash />
-                </ProtectedRoute>
-              }/>
-              <Route path='/instructor' element={<InstructorDash/>} />
-              <Route path='/student' element={<StudentDash/>} />
-              <Route path='/lesson' element={<Lesson />} />
-              <Route path='/register' element={<Register />} />
-              <Route path="/student/library" element={<Library />} />
-              <Route path="/admin/course-management" element={<CourseManagementDash />} />
-              <Route path="/student/course/:courseId" element={<CourseDetails />} />
-              <Route path="/student/course/:courseId/quiz/:quizId" element={<QuizPage />} />
-              <Route path="/student/support" element={<StudentSupport />} />
-              <Route path="/student/announcements" element={<Announcements />} />
-              <Route path="/course-selection" element={<CourseSelection />} />
-              <Route path="/student/notifications" element={<Notifications/>}/>
-              <Route path="/student/profile" element={<Profile />} />
-              <Route path="/student/journey" element={<Journey />} />
-              <Route path="/student/book-session" element={<BookSession />} />
-              <Route path="/admin/users" element={<AdminUsers/>} />
-              <Route path="/unauthorized" element={<div>Not allowed</div>} />
-            </Routes> 
-          </BrowserRouter>
-            
+            <Routes>
+                <Route path='/smartdrive-frontend/' element={<LandingPage/>} />
+                <Route path='/smartdrive-frontend/Home' element={<Home/>} />
+                <Route path='/smartdrive-frontend/instructors' element={<Instructors/>} />
+                <Route path='/smartdrive-frontend/login' element={<Login/>} />
+                <Route path='/smartdrive-frontend/contact' element={<Contact/>} />
+                <Route path='/smartdrive-frontend/my-profile' element={<MyProfile/>} />
+                <Route path='/smartdrive-frontend/my-appointments' element={<MyAppointments/>} />
+                <Route path='/smartdrive-frontend/appointment' element={<Appointments/>} />
+                <Route path='/smartdrive-frontend/admin' element={
+                  <ProtectedRoute allowedRoles={['admin']}>
+                    <AdminDash />
+                  </ProtectedRoute>
+                }/>
+                <Route path='/smartdrive-frontend/instructor' element={<InstructorDash/>} />
+                <Route path='/smartdrive-frontend/student' element={<StudentDash/>} />
+                <Route path='/smartdrive-frontend/lesson' element={<Lesson />} />
+                <Route path='/smartdrive-frontend/register' element={<Register />} />
+                <Route path="/smartdrive-frontend/student/library" element={<Library />} />
+                <Route path="/smartdrive-frontend/admin/course-management" element={<CourseManagementDash />} />
+                <Route path="/smartdrive-frontend/student/course/:courseId" element={<CourseDetails />} />
+                <Route path="/smartdrive-frontend/student/course/:courseId/quiz/:quizId" element={<QuizPage />} />
+                <Route path="/smartdrive-frontend/student/support" element={<StudentSupport />} />
+                <Route path="/smartdrive-frontend/student/announcements" element={<Announcements />} />
+                <Route path="/smartdrive-frontend/course-selection" element={<CourseSelection />} />
+                <Route path="/smartdrive-frontend/student/notifications" element={<Notifications/>}/>
+                <Route path="/smartdrive-frontend/student/profile" element={<Profile />} />
+                <Route path="/smartdrive-frontend/student/journey" element={<Journey />} />
+                <Route path="/smartdrive-frontend/student/book-session" element={<BookSession />} />
+                <Route path="/smartdrive-frontend/admin/users" element={<AdminUsers/>} />
+                <Route path="/smartdrive-frontend/unauthorized" element={<div>Not allowed</div>} />
+              </Routes> 
             <ScrollToTopButton />
       </div>
     </>
