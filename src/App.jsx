@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProtectedRoute from './components/ProtectedRoute';
 import AdminDash from "./pages/AdminDash";
 import Home from "./pages/Home";
@@ -34,7 +34,8 @@ function App() {
   return (
     <>
       <div className="w-full">
-            <Routes>
+          <BrowserRouter basename="/smartdrive-frontend">
+          <Routes>
               <Route path='/' element={<LandingPage/>} />
               <Route path='/Home' element={<Home/>} />
               <Route path='/instructors' element={<Instructors/>} />
@@ -66,6 +67,8 @@ function App() {
               <Route path="/admin/users" element={<AdminUsers/>} />
               <Route path="/unauthorized" element={<div>Not allowed</div>} />
             </Routes> 
+          </BrowserRouter>
+            
             <ScrollToTopButton />
       </div>
     </>
