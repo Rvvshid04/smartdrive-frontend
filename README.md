@@ -45,8 +45,6 @@ The platform offers a full suite of tools to simplify scheduling, payments, lear
 ---
 
 ## 🚀 Technologies Used
-
-*(Optional — add your tech stack here)*  
 - Frontend: React, Tailwind CSS, Vite  
 - Backend: Node.js, Express  
 - Database & Auth: Supabase  
